@@ -2,7 +2,7 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
-    private int[] numbers = new int[12];
+    private final int[] numbers = new int[12];
 
     public int getTotal() {
         return total;
@@ -12,14 +12,6 @@ public class DefaultCountingOutRhymer {
 
     public int[] getNumbers() {
         return numbers;
-    }
-
-    public void setNumbers(int[] numbers) {
-        this.numbers = numbers;
-    }
-
-    public void setTotal(int total) {
-        this.total = total;
     }
 
     public void countIn(int in) {
