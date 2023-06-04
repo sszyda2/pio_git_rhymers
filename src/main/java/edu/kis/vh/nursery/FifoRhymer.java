@@ -4,6 +4,14 @@ public class FifoRhymer extends DefaultCountingOutRhymer {
 
     private DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
 
+    public DefaultCountingOutRhymer getTemp() {
+        return temp;
+    }
+
+    public void setTemp(DefaultCountingOutRhymer temp) {
+        this.temp = temp;
+    }
+
     @Override
     public int countOut() {
         while (!callCheck())
