@@ -11,10 +11,6 @@ public class DefaultCountingOutRhymer {
         return total;
     }
 
-    public int[] getNumbers() {
-        return numbers;
-    }
-
     public void countIn(int in) {
         if (!isFull())
             numbers[++total] = in;
